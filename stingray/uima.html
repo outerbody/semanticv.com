@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<link href='/favicon.ico' rel='shortcut icon'>
+<meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/javascripts/pngfix.js"></script>
+<![endif]-->
+<title>Stingray Finder</title>
+<meta content='SemanticV | Concept Aware Information Tools' name='description'>
+<meta content='data intelligence, uima, semantic products, semantic space, concept aware, information tools, concept analysis, semantic web, web 3.0, eDiscovery, ad targeting, automatic categorization' name='keywords'>
+<meta content='N2pF6yOu2optYKKNvS0cys6zUZLAZeh75TXCHOoilgk=' name='verify-v1'>
+<script plugin="community_engine" src="/javascripts/prototype.js" type="text/javascript"></script>
+<script plugin="community_engine" src="/javascripts/effects.js" type="text/javascript"></script>
+<script plugin="community_engine" src="/javascripts/event-selectors.js" type="text/javascript"></script>
+<script plugin="community_engine" src="/javascripts/glider.js" type="text/javascript"></script>
+<script plugin="community_engine" src="/javascripts/controls.js" type="text/javascript"></script>
+
+<script plugin="community_engine" src="/javascripts/application.js" type="text/javascript"></script>
+<script plugin="community_engine" src="/javascripts/rounder.js" type="text/javascript"></script>
+
+<link href="/stylesheets/reset-fonts-grids.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+<script plugin="community_engine" src="/javascripts/prototip-min.js" type="text/javascript"></script>
+<link href="/stylesheets/prototip.css" media="screen" plugin="community_engine" rel="stylesheet" type="text/css" />
+
+
+<link href="/stylesheets/grant.css" media="screen" rel="stylesheet" type="text/css" />
+
+<body>
+<div class='main yui-t6' id='doc2'>
+<div id='hd'>
+<h1>
+<a href='/' title='--v com name--'>
+<img src='/images/SemanticV.png'>
+</a>
+</h1>
+<div id='NavBar'>
+<table cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+<td>
+<ul>
+<li>
+<a href='/'>Home</a>
+</li>
+<li>
+<a href='/stingray'>Products</a>
+</li>
+</ul>
+</td>
+<td align='right' valign='bottom'>
+<div class='user_panel'>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id='bd'>
+
+<div class='yui-b'>
+<div class='box'>
+<h3>Oasis UIMA</h3>
+<p>
+OASIS is the standards group producing the Unstructured Information Management Architecture (UIMA).  This architectural common ground allows information workers and algorithm developers to work together more easily.  Stingray is available as UIMA components.
+<a href='http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=uima'>
+<img src='/images/oasis.png' style='float:right;'>
+</a>
+</p>
+</div>
+<div class='box'>
+<h3>Apache UIMA</h3>
+<p>
+Apache UIMA is a UIMA framework and tools implementation project.  Stingray UIMA components are compatible with Apache's UIMA implementation.
+</p>
+<a href='http://incubator.apache.org/uima/'>
+<img src='/images/apache-incubator.png' style='float:right;'>
+</a>
+</div>
+<div class='box'>
+<h3>Adaptive Information Tools</h3>
+<p>
+Stingray is a dynamic semantic information tool.
+Stingray can...
+<ul>
+<li>Learn meanings for words based on how they are used.</li>
+<li>Explore information using concepts.</li>
+<li>Discover themes in a body of text.</li>
+</ul>
+</p>
+</div>
+
+<div class='box'>
+<img src='/images/rogo.png' style='float:right;'>
+</div>
+</div>
+<div id='yui-main'>
+<div class='yui-b'>
+<div class='box'>
+<h3>Stingray UIMA Layer</h3>
+<p>
+Stingray UIMA components expose the raw power of Stingray to application developers and information workers.
+Basic operations for concept discovery and semantic tagging are now available at the component level using the
+<a href='http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=uima'>
+OASIS UIMA
+</a>
+architecture.
+Stingray UIMA components are tested with the
+<a href='http://incubator.apache.org/uima/'>
+Apache's UIMA
+</a>
+incubator implimentation.
+</p>
+<p>
+Stingray UIMA Components include a variety of semantic Annotators as well as a Collection Processor so that Stingray components are able to identify jargon particular to the data set.
+</p>
+<div class='code'>
+<dl>
+<br>
+<dt>Stingray Concept Annotator</dt>
+<dd>
+<p>
+The Concept Annotator provides possible meanings for words based on their context.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayConceptAnnotator.xml'>StingrayConceptAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray Meaning Annotator</dt>
+<dd>
+<p>
+The Meaning Annotator decides on the most probable meaning for words based on their context.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayDisambiguationAnnotator.xml'>StingrayDisambiguationAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray MainIdea Annotator</dt>
+<dd>
+<p>
+The MainIdea Annotator determines the predominant concepts for each document.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayMainIdeaAnnotator.xml'>StingrayMainIdeaAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray Category Annotator</dt>
+<dd>
+<p>
+The Category Annotator determines the predominant concept for each document.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayCategoryAnnotator.xml'>StingrayCategoryAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray Keyword Suggestion Annotator</dt>
+<dd>
+<p>
+The Keyword Suggestion Annotator provides a list of possible keywords to summarize the text.  Because of Stingrays concept awareness, it may suggest words that do not appear in the text but are semantically relevant.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayKeywordSuggestionAnnotator.xml'>StingrayKeywordSuggestionAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray Aggregate Annotator</dt>
+<dd>
+<p>
+The Aggregate Annotator orchestrates the Stingray components to work in concert with each other or with your custom or third party UIMA components.
+</p>
+<p>
+XML Descriptor:
+<a href='/docs/uima/StingrayAggregateAnnotator.xml'>StingrayAggregateAnnotator.xml</a>
+<br>
+Type System:
+<a href='/docs/uima/StingrayTypeSystem.xml'>StingrayTypeSystem.xml</a>
+</p>
+</dd>
+<br>
+<dt>Stingray Dynamic Language Analyser</dt>
+<dd>
+<p>
+The Dynamic Language Analyser gives the Stingray components increased accuracy and insight by dynamically discovering the range of concepts that exist in a set of documents.  By previewing the document set, Stingray can accurately Annotate documents that contain specialized jargon that exists only in the dialect of the documents themselves.
+</p>
+</dd>
+</dl>
+</div>
+<br>
+<p>
+<img src='/images/uima.png'>
+Sample Annotations from Stingray MainIdea, Concept and Meaning Annotators:
+<a href='/docs/uima/hotdog.txt.xmi'>
+hotdog.txt.xmi
+</a>
+</p>
+<br>
+<p>
+Stingray UIMA components require the Stingray runtime and license.
+<br>
+See the
+<a href='/stingray'>
+Stingray product page
+</a>
+for details.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</head>
