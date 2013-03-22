@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+<primitive>true</primitive>
+<annotatorImplementationName>com.semanticv.uima.StingrayDisambiguationAnnotator</annotatorImplementationName>
+<analysisEngineMetaData>
+<name>Stingray Disambiguation Annotator</name>
+<description></description>
+<version>0.1</version>
+<vendor>SemanticV</vendor>
+<configurationParameters searchStrategy="language_fallback">
+<configurationParameter>
+<name>SemanticSpaceName</name>
+<description>Specify the configuration group to draw semantic space settings</description>
+<type>String</type>
+<multiValued>false</multiValued>
+<mandatory>false</mandatory>
+</configurationParameter>
+<configurationParameter>
+<name>SemanticSpaceLocation</name>
+<type>String</type>
+<multiValued>false</multiValued>
+<mandatory>false</mandatory>
+</configurationParameter>
+</configurationParameters>
+<configurationParameterSettings/>
+<typeSystemDescription>
+<imports>
+<import location="StingrayTypeSystem.xml"/>
+</imports>
+</typeSystemDescription>
+<typePriorities/>
+<fsIndexCollection/>
+<capabilities>
+<capability>
+<inputs/>
+<outputs>
+<type>com.semanticv.uima.types.V.Meaning</type>
+<feature>com.semanticv.uima.types.V.Meaning:concept</feature>
+<feature>com.semanticv.uima.types.V.Meaning:classifier</feature>
+<feature>com.semanticv.uima.types.V.Meaning:classId</feature>
+</outputs>
+<languagesSupported/>
+</capability>
+</capabilities>
+<operationalProperties>
+<modifiesCas>true</modifiesCas>
+<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+<outputsNewCASes>false</outputsNewCASes>
+</operationalProperties>
+</analysisEngineMetaData>
+</analysisEngineDescription>

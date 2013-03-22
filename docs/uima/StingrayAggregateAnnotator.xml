@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+<primitive>false</primitive>
+<delegateAnalysisEngineSpecifiers>
+<delegateAnalysisEngine key="StingrayConceptAnnotator">
+<import location="StingrayConceptAnnotator.xml"/>
+</delegateAnalysisEngine>
+<delegateAnalysisEngine key="StingrayMainIdeaAnnotator">
+<import location="StingrayMainIdeaAnnotator.xml"/>
+</delegateAnalysisEngine>
+<delegateAnalysisEngine key="StingrayDisambiguationAnnotator">
+<import location="StingrayDisambiguationAnnotator.xml"/>
+</delegateAnalysisEngine>
+</delegateAnalysisEngineSpecifiers>
+<analysisEngineMetaData>
+<name>Stingray Annotator</name>
+<description></description>
+<version>0.1</version>
+<vendor>SemanticV</vendor>
+<configurationParameters searchStrategy="language_fallback">
+<configurationParameter>
+<name>SemanticSpaceName</name>
+<description>Specify the configuration group to draw semantic space settings</description>
+<type>String</type>
+<multiValued>false</multiValued>
+<mandatory>false</mandatory>
+<overrides>
+<parameter>StingrayMainIdeaAnnotator/SemanticSpaceName</parameter>
+<parameter>StingrayDisambiguationAnnotator/SemanticSpaceName</parameter>
+<parameter>StingrayConceptAnnotator/SemanticSpaceName</parameter>
+</overrides>
+</configurationParameter>
+<configurationParameter>
+<name>SemanticSpaceLocation</name>
+<type>String</type>
+<multiValued>false</multiValued>
+<mandatory>false</mandatory>
+<overrides>
+<parameter>StingrayMainIdeaAnnotator/SemanticSpaceLocation</parameter>
+<parameter>StingrayDisambiguationAnnotator/SemanticSpaceLocation</parameter>
+<parameter>StingrayConceptAnnotator/SemanticSpaceLocation</parameter>
+</overrides>
+</configurationParameter>
+</configurationParameters>
+<configurationParameterSettings>
+<nameValuePair>
+<name>SemanticSpaceName</name>
+<value>
+<string>movies</string>
+</value>
+</nameValuePair>
+<nameValuePair>
+<name>SemanticSpaceLocation</name>
+<value>
+<string>/Volumes/Gus/stingray/data/food/food-2k.obj</string>
+</value>
+</nameValuePair>
+</configurationParameterSettings>
+<flowConstraints>
+<fixedFlow>
+<node>StingrayMainIdeaAnnotator</node>
+<node>StingrayDisambiguationAnnotator</node>
+<node>StingrayConceptAnnotator</node>
+</fixedFlow>
+</flowConstraints>
+<typePriorities/>
+<fsIndexCollection/>
+<capabilities>
+<capability>
+<inputs/>
+<outputs>
+<type>com.semanticv.uima.types.V.Meaning</type>
+<feature>com.semanticv.uima.types.V.Meaning:concept</feature>
+<feature>com.semanticv.uima.types.V.Meaning:classifier</feature>
+<feature>com.semanticv.uima.types.V.Meaning:classId</feature>
+<type>com.semanticv.uima.types.V.Concept</type>
+<feature>com.semanticv.uima.types.V.Concept:concept</feature>
+<feature>com.semanticv.uima.types.V.Concept:weight</feature>
+<feature>com.semanticv.uima.types.V.Concept:classifier</feature>
+<feature>com.semanticv.uima.types.V.Concept:classId</feature>
+<type>com.semanticv.uima.types.V.MainIdea</type>
+<feature>com.semanticv.uima.types.V.MainIdea:concept</feature>
+<feature>com.semanticv.uima.types.V.MainIdea:weight</feature>
+<feature>com.semanticv.uima.types.V.MainIdea:classifier</feature>
+<feature>com.semanticv.uima.types.V.MainIdea:classId</feature>
+</outputs>
+<languagesSupported/>
+</capability>
+</capabilities>
+<operationalProperties>
+<modifiesCas>true</modifiesCas>
+<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+<outputsNewCASes>false</outputsNewCASes>
+</operationalProperties>
+</analysisEngineMetaData>
+<resourceManagerConfiguration/>
+</analysisEngineDescription>
